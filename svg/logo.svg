@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+	<title>Logo</title>
+
+//this is the outside box
+	<polygon fill="#641F33" points="125,50 150,450 300,500 450,450 475,50"/>
+	
+//this is the inside box
+	<polygon fill="#fff1e0" points="300,90 300,460  410,420 435,90"/>
+
+//this is the left side of the H character
+   <polygon fill="#fff1e0" points="185,110 250,110 250,215 300,230 300,290 250,275 255,420 200,405"/>
+   
+	
+//this is the right side of the H character
+    <polygon fill="#641F33" points="350,110 350,215 300,230 300,290 350,275 345,420 395,405 415,110"/>
+    
+
+
+</svg>

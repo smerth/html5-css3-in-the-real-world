@@ -1,0 +1,2069 @@
+@charset "UTF-8";
+/* line 2, ../sass/components/_reset.scss */
+body {
+  font: 13px serif;
+  *font-size: small;
+  *font: x-small;
+  line-height: 1.22;
+}
+
+/* line 3, ../sass/components/_reset.scss */
+html, body, body div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent none no-repeat 0 0;
+  color: #484848;
+  font-weight: normal;
+}
+
+/* line 26, ../sass/components/_reset.scss */
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+/* line 28, ../sass/components/_reset.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 30, ../sass/components/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 32, ../sass/components/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../sass/components/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* line 36, ../sass/components/_reset.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 37, ../sass/components/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+/* line 38, ../sass/components/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: inherit;
+  font: 100%;
+}
+
+/* line 39, ../sass/components/_reset.scss */
+input, select {
+  vertical-align: middle;
+  font: 99% sans-serif;
+  color: #282828;
+}
+
+/* line 40, ../sass/components/_reset.scss */
+pre, code, kbd, samp {
+  font-family: monospace, sans-serif;
+}
+
+/* line 41, ../sass/components/_reset.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 42, ../sass/components/_reset.scss */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+/* line 45, ../sass/components/_reset.scss */
+a:hover, a:active {
+  outline: none;
+}
+
+/* line 46, ../sass/components/_reset.scss */
+a:focus {
+  outline: 1px dotted #f3f3f3;
+}
+
+/* line 47, ../sass/components/_reset.scss */
+ul {
+  margin-left: 30px;
+}
+
+/* line 48, ../sass/components/_reset.scss */
+ol {
+  margin-left: 30px;
+  list-style-type: decimal;
+}
+
+/* line 50, ../sass/components/_reset.scss */
+small {
+  font-size: 85%;
+}
+
+/* line 51, ../sass/components/_reset.scss */
+strong {
+  font-weight: bold;
+}
+
+/* line 52, ../sass/components/_reset.scss */
+sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+/* line 53, ../sass/components/_reset.scss */
+sup {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+/* line 55, ../sass/components/_reset.scss */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+/* line 56, ../sass/components/_reset.scss */
+input[type="checkbox"] {
+  vertical-align: bottom;
+  *vertical-align: baseline;
+}
+
+/* line 57, ../sass/components/_reset.scss */
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+/* line 58, ../sass/components/_reset.scss */
+label, input[type=button], input[type=submit], button {
+  cursor: pointer;
+}
+
+/* line 59, ../sass/components/_reset.scss */
+::-moz-selection {
+  background: #484848;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 60, ../sass/components/_reset.scss */
+::selection {
+  background: #484848;
+  color: #fff;
+  text-shadow: none;
+}
+
+/* line 61, ../sass/components/_reset.scss */
+a:link {
+  -webkit-tap-highlight-color: #ccc;
+}
+
+/* line 62, ../sass/components/_reset.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 63, ../sass/components/_reset.scss */
+button {
+  width: auto;
+  overflow: visible;
+}
+
+/* line 64, ../sass/components/_reset.scss */
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* RESET STYLES END HERE */
+/*
+	Grid System.
+	Based on 960 Grid System - http://960.gs/
+
+	24 COLUMN GRID
+*/
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+/* line 17, ../sass/components/_grid.scss */
+body {
+  min-width: 1056px;
+}
+
+/* Containers */
+/* line 24, ../sass/components/_grid.scss */
+.container_24 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1056px;
+}
+
+/* Grid >> Global */
+/* line 33, ../sass/components/_grid.scss */
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20,
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 64, ../sass/components/_grid.scss */
+.push_1,
+.pull_1,
+.push_2,
+.pull_2,
+.push_3,
+.pull_3,
+.push_4,
+.pull_4,
+.push_5,
+.pull_5,
+.push_6,
+.pull_6,
+.push_7,
+.pull_7,
+.push_8,
+.pull_8,
+.push_9,
+.pull_9,
+.push_10,
+.pull_10,
+.push_11,
+.pull_11,
+.push_12,
+.pull_12,
+.push_13,
+.pull_13,
+.push_14,
+.pull_14,
+.push_15,
+.pull_15,
+.push_16,
+.pull_16,
+.push_17,
+.pull_17,
+.push_18,
+.pull_18,
+.push_19,
+.pull_19,
+.push_20,
+.pull_20,
+.push_21,
+.pull_21,
+.push_22,
+.pull_22,
+.push_23,
+.pull_23,
+.push_24,
+.pull_24 {
+  position: relative;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last) */
+/* line 118, ../sass/components/_grid.scss */
+.alpha {
+  margin-left: 0;
+}
+
+/* line 122, ../sass/components/_grid.scss */
+.omega {
+  margin-right: 0;
+}
+
+/* Grid >> 24 Columns */
+/* line 129, ../sass/components/_grid.scss */
+.container_24 .grid_1 {
+  width: 34px;
+}
+
+/* line 133, ../sass/components/_grid.scss */
+.container_24 .grid_2 {
+  width: 78px;
+}
+
+/* line 137, ../sass/components/_grid.scss */
+.container_24 .grid_3 {
+  width: 122px;
+}
+
+/* line 141, ../sass/components/_grid.scss */
+.container_24 .grid_4 {
+  width: 166px;
+}
+
+/* line 145, ../sass/components/_grid.scss */
+.container_24 .grid_5 {
+  width: 209px;
+}
+
+/* line 149, ../sass/components/_grid.scss */
+.container_24 .grid_6 {
+  width: 254px;
+}
+
+/* line 153, ../sass/components/_grid.scss */
+.container_24 .grid_7 {
+  width: 298px;
+}
+
+/* line 157, ../sass/components/_grid.scss */
+.container_24 .grid_8 {
+  width: 342px;
+}
+
+/* line 161, ../sass/components/_grid.scss */
+.container_24 .grid_9 {
+  width: 386px;
+}
+
+/* line 165, ../sass/components/_grid.scss */
+.container_24 .grid_10 {
+  width: 430px;
+}
+
+/* line 169, ../sass/components/_grid.scss */
+.container_24 .grid_11 {
+  width: 474px;
+}
+
+/* line 173, ../sass/components/_grid.scss */
+.container_24 .grid_12 {
+  width: 518px;
+}
+
+/* line 177, ../sass/components/_grid.scss */
+.container_24 .grid_13 {
+  width: 562px;
+}
+
+/* line 181, ../sass/components/_grid.scss */
+.container_24 .grid_14 {
+  width: 606px;
+}
+
+/* line 185, ../sass/components/_grid.scss */
+.container_24 .grid_15 {
+  width: 650px;
+}
+
+/* line 189, ../sass/components/_grid.scss */
+.container_24 .grid_16 {
+  width: 694px;
+}
+
+/* line 193, ../sass/components/_grid.scss */
+.container_24 .grid_17 {
+  width: 738px;
+}
+
+/* line 197, ../sass/components/_grid.scss */
+.container_24 .grid_18 {
+  width: 782px;
+}
+
+/* line 201, ../sass/components/_grid.scss */
+.container_24 .grid_19 {
+  width: 826px;
+}
+
+/* line 205, ../sass/components/_grid.scss */
+.container_24 .grid_20 {
+  width: 870px;
+}
+
+/* line 209, ../sass/components/_grid.scss */
+.container_24 .grid_21 {
+  width: 914px;
+}
+
+/* line 213, ../sass/components/_grid.scss */
+.container_24 .grid_22 {
+  width: 958px;
+}
+
+/* line 217, ../sass/components/_grid.scss */
+.container_24 .grid_23 {
+  width: 1002px;
+}
+
+/* line 221, ../sass/components/_grid.scss */
+.container_24 .grid_24 {
+  width: 1046px;
+}
+
+/* Prefix Extra Space >> 24 Columns */
+/* line 228, ../sass/components/_grid.scss */
+.container_24 .prefix_1 {
+  padding-left: 44px;
+}
+
+/* line 232, ../sass/components/_grid.scss */
+.container_24 .prefix_2 {
+  padding-left: 88px;
+}
+
+/* line 236, ../sass/components/_grid.scss */
+.container_24 .prefix_3 {
+  padding-left: 132px;
+}
+
+/* line 240, ../sass/components/_grid.scss */
+.container_24 .prefix_4 {
+  padding-left: 176px;
+}
+
+/* line 244, ../sass/components/_grid.scss */
+.container_24 .prefix_5 {
+  padding-left: 220px;
+}
+
+/* line 248, ../sass/components/_grid.scss */
+.container_24 .prefix_6 {
+  padding-left: 264px;
+}
+
+/* line 252, ../sass/components/_grid.scss */
+.container_24 .prefix_7 {
+  padding-left: 308px;
+}
+
+/* line 256, ../sass/components/_grid.scss */
+.container_24 .prefix_8 {
+  padding-left: 352px;
+}
+
+/* line 260, ../sass/components/_grid.scss */
+.container_24 .prefix_9 {
+  padding-left: 396px;
+}
+
+/* line 264, ../sass/components/_grid.scss */
+.container_24 .prefix_10 {
+  padding-left: 440px;
+}
+
+/* line 268, ../sass/components/_grid.scss */
+.container_24 .prefix_11 {
+  padding-left: 484px;
+}
+
+/* line 272, ../sass/components/_grid.scss */
+.container_24 .prefix_12 {
+  padding-left: 528px;
+}
+
+/* line 276, ../sass/components/_grid.scss */
+.container_24 .prefix_13 {
+  padding-left: 572px;
+}
+
+/* line 280, ../sass/components/_grid.scss */
+.container_24 .prefix_14 {
+  padding-left: 616px;
+}
+
+/* line 284, ../sass/components/_grid.scss */
+.container_24 .prefix_15 {
+  padding-left: 660px;
+}
+
+/* line 288, ../sass/components/_grid.scss */
+.container_24 .prefix_16 {
+  padding-left: 704px;
+}
+
+/* line 292, ../sass/components/_grid.scss */
+.container_24 .prefix_17 {
+  padding-left: 748px;
+}
+
+/* line 296, ../sass/components/_grid.scss */
+.container_24 .prefix_18 {
+  padding-left: 792px;
+}
+
+/* line 300, ../sass/components/_grid.scss */
+.container_24 .prefix_19 {
+  padding-left: 836px;
+}
+
+/* line 304, ../sass/components/_grid.scss */
+.container_24 .prefix_20 {
+  padding-left: 880px;
+}
+
+/* line 308, ../sass/components/_grid.scss */
+.container_24 .prefix_21 {
+  padding-left: 924px;
+}
+
+/* line 312, ../sass/components/_grid.scss */
+.container_24 .prefix_22 {
+  padding-left: 968px;
+}
+
+/* line 316, ../sass/components/_grid.scss */
+.container_24 .prefix_23 {
+  padding-left: 1012px;
+}
+
+/* Suffix Extra Space >> 24 Columns */
+/* line 323, ../sass/components/_grid.scss */
+.container_24 .suffix_1 {
+  padding-right: 44px;
+}
+
+/* line 327, ../sass/components/_grid.scss */
+.container_24 .suffix_2 {
+  padding-right: 88px;
+}
+
+/* line 331, ../sass/components/_grid.scss */
+.container_24 .suffix_3 {
+  padding-right: 132px;
+}
+
+/* line 335, ../sass/components/_grid.scss */
+.container_24 .suffix_4 {
+  padding-right: 176px;
+}
+
+/* line 339, ../sass/components/_grid.scss */
+.container_24 .suffix_5 {
+  padding-right: 220px;
+}
+
+/* line 343, ../sass/components/_grid.scss */
+.container_24 .suffix_6 {
+  padding-right: 264px;
+}
+
+/* line 347, ../sass/components/_grid.scss */
+.container_24 .suffix_7 {
+  padding-right: 308px;
+}
+
+/* line 351, ../sass/components/_grid.scss */
+.container_24 .suffix_8 {
+  padding-right: 352px;
+}
+
+/* line 355, ../sass/components/_grid.scss */
+.container_24 .suffix_9 {
+  padding-right: 396px;
+}
+
+/* line 359, ../sass/components/_grid.scss */
+.container_24 .suffix_10 {
+  padding-right: 440px;
+}
+
+/* line 363, ../sass/components/_grid.scss */
+.container_24 .suffix_11 {
+  padding-right: 484px;
+}
+
+/* line 367, ../sass/components/_grid.scss */
+.container_24 .suffix_12 {
+  padding-right: 528px;
+}
+
+/* line 371, ../sass/components/_grid.scss */
+.container_24 .suffix_13 {
+  padding-right: 572px;
+}
+
+/* line 375, ../sass/components/_grid.scss */
+.container_24 .suffix_14 {
+  padding-right: 616px;
+}
+
+/* line 379, ../sass/components/_grid.scss */
+.container_24 .suffix_15 {
+  padding-right: 660px;
+}
+
+/* line 383, ../sass/components/_grid.scss */
+.container_24 .suffix_16 {
+  padding-right: 704px;
+}
+
+/* line 387, ../sass/components/_grid.scss */
+.container_24 .suffix_17 {
+  padding-right: 748px;
+}
+
+/* line 391, ../sass/components/_grid.scss */
+.container_24 .suffix_18 {
+  padding-right: 792px;
+}
+
+/* line 395, ../sass/components/_grid.scss */
+.container_24 .suffix_19 {
+  padding-right: 836px;
+}
+
+/* line 399, ../sass/components/_grid.scss */
+.container_24 .suffix_20 {
+  padding-right: 880px;
+}
+
+/* line 403, ../sass/components/_grid.scss */
+.container_24 .suffix_21 {
+  padding-right: 924px;
+}
+
+/* line 407, ../sass/components/_grid.scss */
+.container_24 .suffix_22 {
+  padding-right: 968px;
+}
+
+/* line 411, ../sass/components/_grid.scss */
+.container_24 .suffix_23 {
+  padding-right: 1012px;
+}
+
+/* Push Space >> 24 Columns */
+/* line 418, ../sass/components/_grid.scss */
+.container_24 .push_1 {
+  left: 44px;
+}
+
+/* line 422, ../sass/components/_grid.scss */
+.container_24 .push_2 {
+  left: 88px;
+}
+
+/* line 426, ../sass/components/_grid.scss */
+.container_24 .push_3 {
+  left: 132px;
+}
+
+/* line 430, ../sass/components/_grid.scss */
+.container_24 .push_4 {
+  left: 176px;
+}
+
+/* line 434, ../sass/components/_grid.scss */
+.container_24 .push_5 {
+  left: 220px;
+}
+
+/* line 438, ../sass/components/_grid.scss */
+.container_24 .push_6 {
+  left: 264px;
+}
+
+/* line 442, ../sass/components/_grid.scss */
+.container_24 .push_7 {
+  left: 308px;
+}
+
+/* line 446, ../sass/components/_grid.scss */
+.container_24 .push_8 {
+  left: 352px;
+}
+
+/* line 450, ../sass/components/_grid.scss */
+.container_24 .push_9 {
+  left: 396px;
+}
+
+/* line 454, ../sass/components/_grid.scss */
+.container_24 .push_10 {
+  left: 440px;
+}
+
+/* line 458, ../sass/components/_grid.scss */
+.container_24 .push_11 {
+  left: 484px;
+}
+
+/* line 462, ../sass/components/_grid.scss */
+.container_24 .push_12 {
+  left: 528px;
+}
+
+/* line 466, ../sass/components/_grid.scss */
+.container_24 .push_13 {
+  left: 572px;
+}
+
+/* line 470, ../sass/components/_grid.scss */
+.container_24 .push_14 {
+  left: 616px;
+}
+
+/* line 474, ../sass/components/_grid.scss */
+.container_24 .push_15 {
+  left: 660px;
+}
+
+/* line 478, ../sass/components/_grid.scss */
+.container_24 .push_16 {
+  left: 704px;
+}
+
+/* line 482, ../sass/components/_grid.scss */
+.container_24 .push_17 {
+  left: 748px;
+}
+
+/* line 486, ../sass/components/_grid.scss */
+.container_24 .push_18 {
+  left: 792px;
+}
+
+/* line 490, ../sass/components/_grid.scss */
+.container_24 .push_19 {
+  left: 836px;
+}
+
+/* line 494, ../sass/components/_grid.scss */
+.container_24 .push_20 {
+  left: 880px;
+}
+
+/* line 498, ../sass/components/_grid.scss */
+.container_24 .push_21 {
+  left: 924px;
+}
+
+/* line 502, ../sass/components/_grid.scss */
+.container_24 .push_22 {
+  left: 968px;
+}
+
+/* line 506, ../sass/components/_grid.scss */
+.container_24 .push_23 {
+  left: 1012px;
+}
+
+/* Pull Space >> 24 Columns */
+/* line 513, ../sass/components/_grid.scss */
+.container_24 .pull_1 {
+  left: -44px;
+}
+
+/* line 517, ../sass/components/_grid.scss */
+.container_24 .pull_2 {
+  left: -88px;
+}
+
+/* line 521, ../sass/components/_grid.scss */
+.container_24 .pull_3 {
+  left: -132px;
+}
+
+/* line 525, ../sass/components/_grid.scss */
+.container_24 .pull_4 {
+  left: -176px;
+}
+
+/* line 529, ../sass/components/_grid.scss */
+.container_24 .pull_5 {
+  left: -220px;
+}
+
+/* line 533, ../sass/components/_grid.scss */
+.container_24 .pull_6 {
+  left: -264px;
+}
+
+/* line 537, ../sass/components/_grid.scss */
+.container_24 .pull_7 {
+  left: -308px;
+}
+
+/* line 541, ../sass/components/_grid.scss */
+.container_24 .pull_8 {
+  left: -352px;
+}
+
+/* line 545, ../sass/components/_grid.scss */
+.container_24 .pull_9 {
+  left: -396px;
+}
+
+/* line 549, ../sass/components/_grid.scss */
+.container_24 .pull_10 {
+  left: -440px;
+}
+
+/* line 553, ../sass/components/_grid.scss */
+.container_24 .pull_11 {
+  left: -484px;
+}
+
+/* line 557, ../sass/components/_grid.scss */
+.container_24 .pull_12 {
+  left: -528px;
+}
+
+/* line 561, ../sass/components/_grid.scss */
+.container_24 .pull_13 {
+  left: -572px;
+}
+
+/* line 565, ../sass/components/_grid.scss */
+.container_24 .pull_14 {
+  left: -616px;
+}
+
+/* line 569, ../sass/components/_grid.scss */
+.container_24 .pull_15 {
+  left: -660px;
+}
+
+/* line 573, ../sass/components/_grid.scss */
+.container_24 .pull_16 {
+  left: -704px;
+}
+
+/* line 577, ../sass/components/_grid.scss */
+.container_24 .pull_17 {
+  left: -748px;
+}
+
+/* line 581, ../sass/components/_grid.scss */
+.container_24 .pull_18 {
+  left: -792px;
+}
+
+/* line 585, ../sass/components/_grid.scss */
+.container_24 .pull_19 {
+  left: -836px;
+}
+
+/* line 589, ../sass/components/_grid.scss */
+.container_24 .pull_20 {
+  left: -880px;
+}
+
+/* line 593, ../sass/components/_grid.scss */
+.container_24 .pull_21 {
+  left: -924px;
+}
+
+/* line 597, ../sass/components/_grid.scss */
+.container_24 .pull_22 {
+  left: -968px;
+}
+
+/* line 601, ../sass/components/_grid.scss */
+.container_24 .pull_23 {
+  left: -1012px;
+}
+
+/* `Clear Floated Elements */
+/* http://sonspring.com/journal/clearing-floats */
+/* line 611, ../sass/components/_grid.scss */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+/* line 623, ../sass/components/_grid.scss */
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* line 633, ../sass/components/_grid.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+/* line 643, ../sass/components/_grid.scss */
+.clearfix {
+  zoom: 1;
+}
+
+/* @font-face code Generated by Font Squirrel (http://www.fontsquirrel.com) */
+@font-face {
+  font-family: 'AcknowledgementMedium';
+  src: url("../fonts/Acknowledgement-webfont.eot");
+  src: url("../fonts/Acknowledgement-webfont.eot?#iefix") format("eot"), url("../fonts/Acknowledgement-webfont.woff") format("woff"), url("../fonts/Acknowledgement-webfont.ttf") format("truetype"), url("../fonts/Acknowledgement-webfont.svg#webfontuCYqM11k") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LeagueGothic';
+  src: url("../fonts/League_Gothic-webfont.eot");
+  src: url("../fonts/League_Gothic-webfont.eot?#iefix") format("eot"), url("../fonts/League_Gothic-webfont.woff") format("woff"), url("../fonts/League_Gothic-webfont.ttf") format("truetype"), url("../fonts/League_Gothic-webfont.svg#webfontFHzvtkso") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+/* colors */
+/*  I need a mixin for all images included in column articles, it should size the image, center the image, and add appropriate spacing...  use the selector ".article-image"   */
+/*
+.video-column{
+float: right;
+}
+*/
+/******************** CSS3 DEMO - MOVING BIKE ***************/
+/* line 22, ../sass/components/_mixins.scss */
+#col1 #ad2 h1 {
+  text-align: center;
+}
+
+/* line 25, ../sass/components/_mixins.scss */
+#ad2:hover {
+  background-position: 150% 88%, 0 0;
+}
+
+/* line 28, ../sass/components/_mixins.scss */
+#ad2 {
+  height: 85px;
+  background-image: url(../images/rocket.png), url(../images/gradient.svg);
+  /* Mozilla gradient syntax */
+  background-image: url(../images/rocket.png), -moz-linear-gradient(0% 0% 270deg, rgba(158, 47, 80, 0.4) 0, rgba(158, 47, 80, 0) 37%, rgba(158, 47, 80, 0) 83%, rgba(158, 47, 80, 0.06) 92%, rgba(158, 47, 80, 0) 98%);
+  /* W3C gradient syntax for WebKit */
+  background-image: url(../images/rocket.png), -webkit-linear-gradient(top, rgba(158, 47, 80, 0.4) 0, rgba(158, 47, 80, 0) 37%, rgba(158, 47, 80, 0) 83%, rgba(158, 47, 80, 0.06) 92%, rgba(158, 47, 80, 0) 98%);
+  /* W3C gradient syntax for Opera */
+  background-image: url(../images/rocket.png), -o-linear-gradient(top, rgba(158, 47, 80, 0.4) 0, rgba(158, 47, 80, 0) 37%, rgba(158, 47, 80, 0) 83%, rgba(158, 47, 80, 0.06) 92%, rgba(158, 47, 80, 0) 98%);
+  /* Unprefixed W3C syntax */
+  background-image: url(../images/rocket.png), linear-gradient(to bottom, rgba(158, 47, 80, 0.4) 0%, rgba(158, 47, 80, 0) 37%, rgba(158, 47, 80, 0) 83%, rgba(158, 47, 80, 0.06) 92%, rgba(158, 47, 80, 0) 98%);
+  /* Old WebKit syntax */
+  background-image: url(../images/rocket.png), -webkit-gradient(linear, from(rgba(0, 0, 0, 0.4)), color-stop(37%, transparent), color-stop(83%, transparent), color-stop(92%, rgba(0, 0, 0, 0.16)), color-stop(98%, transparent));
+  background-position: 1% 88%, 0 0;
+  -webkit-transition: background-position  1s linear 250ms;
+  -moz-transition: background-position  1s linear 250ms;
+  -o-transition: background-position  1s linear 250ms;
+  transition: background-position  1s linear 250ms;
+}
+
+/******************** CSS3 DEMO - TEXT TRANSFORM ***************/
+/* line 88, ../sass/components/_mixins.scss */
+#ad3 {
+  background-image: url(../images/dukes.png);
+  background-position: bottom left;
+  -webkit-transition: transform  2s linear 250ms;
+  -moz-transition: transform  2s linear 250ms;
+  -o-transition: transform  2s linear 250ms;
+  transition: transform  2s linear 250ms;
+}
+
+/* line 96, ../sass/components/_mixins.scss */
+#ad3 p {
+  font-size: 0.85em;
+}
+
+/******************** CSS3 DEMO - FEED THE Monster ***************/
+/* line 103, ../sass/components/_mixins.scss */
+#monster {
+  margin: 0 0 0 15px;
+  display: block;
+}
+
+/* line 107, ../sass/components/_mixins.scss */
+.draganddrop #bombContainer {
+  text-align: center;
+}
+
+/* line 110, ../sass/components/_mixins.scss */
+.no-draganddrop #bombContainer {
+  visibility: hidden;
+  height: 0px;
+}
+
+/******************** CSS3 DEMO - GEOLOCATION ***************/
+/* line 117, ../sass/components/_mixins.scss */
+#col4 article #ad4 {
+  margin: 10px 0px 0px 0px;
+  padding: 0;
+}
+
+/* line 122, ../sass/components/_mixins.scss */
+.no-geolocation #ad4 {
+  display: none;
+}
+
+/* line 125, ../sass/components/_mixins.scss */
+#ad4 h1 {
+  display: none;
+}
+
+/* line 128, ../sass/components/_mixins.scss */
+#ad4 {
+  border: none;
+  height: 208px;
+  background-image: url(../images/map-bkg.png);
+  background-position: top center;
+  position: relative;
+}
+
+/* line 139, ../sass/components/_mixins.scss */
+#mapDiv {
+  /* margin-left: -9px; */
+  padding-bottom: 0px;
+  height: 208px;
+}
+
+/* line 144, ../sass/components/_mixins.scss */
+#spinner {
+  position: absolute;
+  top: 18px;
+  left: 35px;
+}
+
+/****************************** Text Transformations *******************************/
+/* line 152, ../sass/components/_mixins.scss */
+#ad3 h1 {
+  font-size: 20px;
+  font-family: AcknowledgementMedium;
+  padding: 0 30px 0 75px;
+  line-height: 1;
+  color: #999;
+  margin: 0 0 0 15px;
+}
+
+/* line 160, ../sass/components/_mixins.scss */
+#ad3 h1 span {
+  font-size: 20px;
+  color: #999999;
+  display: inline-block;
+  -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  -moz-transition: color 0.2s ease-out, -moz-transform 0.2s ease-out;
+  -o-transition: color 0.2s ease-out, -o-transform 0.2s ease-out;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+}
+
+/* line 169, ../sass/components/_mixins.scss */
+.holding {
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 175, ../sass/components/_mixins.scss */
+#ad3 h1:hover span {
+  color: #FB120F;
+  -webkit-transform: rotate(10deg) translateX(40px) scale(2);
+  -moz-transform: rotate(10deg) translateX(40px) scale(2);
+  -ms-transform: rotate(10deg) translateX(40px) scale(2);
+  -o-transform: rotate(10deg) translateX(40px) scale(2);
+  transform: rotate(10deg) translateX(40px) scale(2);
+}
+
+/******************** CSS3 DEMO - BIG BUTTON ***************/
+/* line 2, ../sass/components/_buttons.scss */
+#ad1 h1 {
+  font-family: AcknowledgementMedium;
+  letter-spacing: 0.1em;
+  font-size: 30px;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+/* line 9, ../sass/components/_buttons.scss */
+#ad1 h1:first-letter {
+  letter-spacing: -0.1em;
+}
+
+/* line 12, ../sass/components/_buttons.scss */
+#ad1 p {
+  /*   margin: 0px 0px 5px 0px; */
+  font-family: AcknowledgementMedium;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* line 19, ../sass/components/_buttons.scss */
+#ad1 a.wanted:hover {
+  -webkit-box-shadow: 4px 10px #484848;
+  -moz-box-shadow: 4px 10px #484848;
+  box-shadow: 4px 10px #484848;
+  top: -5px;
+  left: -2px;
+}
+
+/* line 26, ../sass/components/_buttons.scss */
+aside p + a {
+  display: block;
+  text-decoration: none;
+  border: 5px double;
+  color: #ffffff;
+  background-color: #484848;
+  text-align: center;
+  font-size: 26px;
+  /*
+  margin: 5px 5px 9px 0px; 
+  padding: 15px 0;
+  */
+  position: relative;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 5px 0 0 #484848;
+  -moz-box-shadow: 2px 5px 0 0 #484848;
+  box-shadow: 2px 5px 0 0 #484848;
+  text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+  font-family: AcknowledgementMedium, sans-serif;
+}
+
+/* line 1, ../sass/components/_canvas.scss */
+#myCanvas {
+  border-width: 2px;
+  border-style: dotted;
+  border-color: black;
+  margin: 0px 20px;
+}
+
+/* All Forms */
+/* line 2, ../sass/components/_forms.scss */
+form p {
+  font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
+  font-size: 24px;
+  padding: 30px 30px 30px 30px;
+  color: #ab9887;
+}
+
+/* line 10, ../sass/components/_forms.scss */
+body.register .grid_14 {
+  margin-left: 0px;
+}
+
+/* line 14, ../sass/components/_forms.scss */
+.register #col1 h1 {
+  color: #193c57;
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  font-size: 33px;
+  /*
+  margin: 0px 0 4px 0; */
+  padding-top: 10px;
+}
+
+/* line 29, ../sass/components/_forms.scss */
+#geoForm input {
+  margin-top: 60px;
+  height: 80px;
+}
+
+/* line 34, ../sass/components/_forms.scss */
+input {
+  height: 30px;
+}
+
+/* line 37, ../sass/components/_forms.scss */
+input:focus {
+  background-color: #E0FFE2;
+}
+
+/* line 40, ../sass/components/_forms.scss */
+Input:required,
+Input[required] {
+  background-image: url("../images/required.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-size: 10px; */
+}
+
+/* line 47, ../sass/components/_forms.scss */
+Input:focus:invalid {
+  background-image: url("../images/invalid.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-size: 10px; */
+  box-shadow: none;
+}
+
+/* line 54, ../sass/components/_forms.scss */
+Input:focus:valid {
+  background-image: url("../images/valid.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  /* background-size: 10px; */
+}
+
+/* line 60, ../sass/components/_forms.scss */
+.placeholder {
+  color: #A9A9A9;
+}
+
+/* our JS script adds the placeholder class to input fields when the Modernizer.js script finds a browser doesn't support HTML5 placeholder, so we can style the fake placeholder content like the HTML version */
+/* line 63, ../sass/components/_forms.scss */
+#asterix {
+  float: right;
+  height: 30px;
+  width: 200px;
+  background-image: url("../images/required.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+/* line 71, ../sass/components/_forms.scss */
+#required {
+  float: right;
+  color: fuchsia;
+}
+
+/* Registration Form */
+/* line 82, ../sass/components/_forms.scss */
+#register-name,
+#email,
+#url {
+  width: 300px;
+}
+
+/* line 87, ../sass/components/_forms.scss */
+#startdate {
+  width: 200px;
+}
+
+/* line 90, ../sass/components/_forms.scss */
+#favcolor,
+#quantity {
+  width: 80px;
+}
+
+/* Forms */
+/* line 101, ../sass/components/_forms.scss */
+form {
+  clear: both;
+  -moz-box-shadow: inset 1px 1px 84px rgba(191, 171, 151, 0.4), inset -1px -1px 84px rgba(191, 171, 151, 0.4);
+  /*
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#b1b1b1'); 
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#b1b1b1')";
+  */
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  min-height: 300px;
+  background: rgba(255, 215, 181, 0.5) url(../images/bg-form.png) no-repeat bottom center;
+}
+
+/* line 121, ../sass/components/_forms.scss */
+form#geoForm {
+  padding: 0px;
+  border: none;
+  min-height: 0px;
+  background: none;
+  filter: none;
+  -ms-filter: none;
+  -moz-box-shadow: none;
+}
+
+/* line 132, ../sass/components/_forms.scss */
+form ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 137, ../sass/components/_forms.scss */
+form ul li {
+  margin-bottom: 40px;
+}
+
+/* line 141, ../sass/components/_forms.scss */
+label {
+  font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
+  font-size: 26px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 148, ../sass/components/_forms.scss */
+form p {
+  text-align: center;
+}
+
+/* line 151, ../sass/components/_forms.scss */
+input[type=text], input[type=email], input[type=password], input[type=url], textarea {
+  background-color: transparent;
+  border: dotted #484848;
+  border-width: 0 0 1px 0;
+  display: block;
+  margin: 10px auto 10px;
+  font-style: italic;
+  font-family: Times, "Times New Roman", serif;
+  padding: 5px 30px 5px 30px;
+  width: 50%;
+}
+
+/* line 163, ../sass/components/_forms.scss */
+input#zipcode {
+  width: 25%;
+  display: inline;
+  margin-right: 25px;
+}
+
+/* line 168, ../sass/components/_forms.scss */
+input[type=number] {
+  width: 3em;
+}
+
+/* line 172, ../sass/components/_forms.scss */
+input:not([type=range]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]) {
+  background: transparent no-repeat top right;
+}
+
+/* line 176, ../sass/components/_forms.scss */
+input:not([type=range]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]):required {
+  background-image: url("../images/required.png");
+}
+
+/* line 180, ../sass/components/_forms.scss */
+input:not([type=range]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]):focus:invalid {
+  background-image: url("../images/invalid.png");
+}
+
+/* line 183, ../sass/components/_forms.scss */
+input:not([type=range]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]):focus:valid {
+  background-image: url("../images/valid.png");
+}
+
+/* line 187, ../sass/components/_forms.scss */
+:invalid {
+  box-shadow: none;
+}
+
+/* line 191, ../sass/components/_forms.scss */
+::-webkit-input-placeholder {
+  color: #333;
+}
+
+/* line 194, ../sass/components/_forms.scss */
+input {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line 199, ../sass/components/_forms.scss */
+input[type=submit], input[type=button] {
+  border: none;
+  -moz-border-radius: 10%;
+  border-radius: 5px;
+  background-color: #333;
+  /* SVG for IE9 and Opera */
+  background-image: url(../images/button-gradient.svg);
+  /* Old WebKit */
+  background-image: -webkit-gradient(radial, 30% 120%, 0, 30% 120%, 100, color-stop(0, #909090), color-stop(1, #484848));
+  /* W3C for Mozilla */
+  background-image: -moz-radial-gradient(30% 120%, circle, #909090 0%, #484848 50%);
+  /* W3C for new WebKit */
+  background-image: -webkit-radial-gradient(30% 120%, circle, #909090 0%, #484848 50%);
+  /* W3C unprefixed */
+  background-image: radial-gradient(circle at 30% 120%, #909090 0%, #484848 50%);
+  color: #fff;
+  font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  padding: 20px 30px;
+  margin: 10px auto;
+  opacity: 0.8;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+}
+
+/* line 236, ../sass/components/_forms.scss */
+input[type=submit]:hover {
+  opacity: 1;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+}
+
+/* line 250, ../sass/components/_forms.scss */
+body.register hgroup.form h1 {
+  padding-top: 10px;
+}
+
+/* line 255, ../sass/components/_forms.scss */
+body.register hgroup.form {
+  margin-top: -10px;
+  background-color: #ffffff;
+  border: solid 2px #651E33;
+  border-width: 0px 0px 2px 0px;
+}
+
+/* line 262, ../sass/components/_forms.scss */
+hgroup.form h1 {
+  color: #651e33;
+  margin: 25px 0px 10px 0px;
+  font-size: 45px;
+  font-family: AcknowledgementMedium;
+  text-align: center;
+  white-space: nowrap;
+  background: url(../images/bg-formtitle-left.png) left 20px no-repeat, url(../images/bg-formtitle-right.png) right 20px no-repeat;
+}
+
+/* line 274, ../sass/components/_forms.scss */
+hgroup.form h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+/* line 279, ../sass/components/_forms.scss */
+hgroup.form p {
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+/* line 285, ../sass/components/_forms.scss */
+form hgroup {
+  padding-bottom: 50px;
+}
+
+/* high level site settings */
+/* line 106, ../../../../../../.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 93.75%;
+  line-height: 1.6em;
+}
+
+/* line 6, ../sass/styles.scss */
+html {
+  background-color: #fff1e0;
+  margin-top: 15px;
+  background-image: url(../images/bg-texture.png);
+  background-position: center -16px;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+/* line 19, ../sass/styles.scss */
+html.frontpage {
+  background-image: url(../images/3-coffee-stains.png), url(../images/note-to-self.png), url(../images/bg-texture.png);
+  background-position: -120px 450px, 1030px 850px, center -16px;
+  background-origin: border-box, border-box, border-box;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+/* line 26, ../sass/styles.scss */
+body {
+  color: #484848;
+  font-family: "Times New Roman", Times, serif;
+  /* 	border-top: solid 1px #9E2F50; */
+  height: 100%;
+  /* position: relative; */
+}
+
+/* line 34, ../sass/styles.scss */
+p {
+  text-align: justify;
+}
+
+/*************** HEADER ****************/
+/* Site Name - Branding */
+/* body > */
+/* line 47, ../sass/styles.scss */
+header {
+  position: relative;
+  background-image: url(../images/press-globe.gif);
+  background-position: 98% -67px;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+}
+/* line 57, ../sass/styles.scss */
+header hgroup {
+  border-top: double 3px #9e2f50;
+  margin: 1px auto;
+  padding-top: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 63, ../sass/styles.scss */
+header hgroup a {
+  text-decoration: none;
+}
+/* line 66, ../sass/styles.scss */
+header hgroup h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  color: #007191;
+  /* margin-left: -30px; */
+}
+/* line 71, ../sass/styles.scss */
+header hgroup h1 span.the {
+  color: #007191;
+  font-size: .6em;
+  position: absolute;
+  left: 70px;
+  top: 15px;
+}
+/* line 79, ../sass/styles.scss */
+header hgroup #logo {
+  position: absolute;
+  left: 145px;
+  top: 5px;
+}
+/* line 84, ../sass/styles.scss */
+header hgroup h2.slogan {
+  font-family: LeagueGothic;
+  font-size: 20px;
+  color: #e37303;
+  margin-top: -8px;
+  margin-bottom: 10px;
+}
+/* line 91, ../sass/styles.scss */
+header hgroup p {
+  position: absolute;
+  bottom: 0;
+  line-height: 25px;
+  font-size: 12px;
+  margin: 0;
+}
+
+/* Navigation */
+/*all menus */
+/* line 107, ../sass/styles.scss */
+nav ul li a {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #9e2f50;
+  text-transform: uppercase;
+  line-height: 27px;
+  text-decoration: none;
+}
+/* line 115, ../sass/styles.scss */
+nav ul li a:hover, nav ul li a:active {
+  color: #193c57;
+}
+
+/*main menu */
+/* line 124, ../sass/styles.scss */
+nav.main-menu {
+  position: relative;
+  border-top: double 3px #9e2f50;
+  border-bottom: double 3px #9e2f50;
+  background-color: rgba(255, 214, 177, 0.5);
+  height: 28px;
+}
+/* line 130, ../sass/styles.scss */
+nav.main-menu #volume {
+  position: absolute;
+  top: 5px;
+  padding-left: 10px;
+}
+/* line 135, ../sass/styles.scss */
+nav.main-menu ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+  text-align: center;
+  margin: 1px auto;
+  width: 170px;
+}
+/* line 62, ../../../../../../.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav.main-menu ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: left;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+/* line 49, ../../../../../../.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav.main-menu ul li:first-child {
+  padding-left: 0;
+}
+/* line 50, ../../../../../../.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav.main-menu ul li:last-child {
+  padding-right: 0;
+}
+/* line 52, ../../../../../../.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+nav.main-menu ul li.last {
+  padding-right: 0;
+}
+/* line 141, ../sass/styles.scss */
+nav.main-menu a {
+  color: #193c57;
+}
+/* line 143, ../sass/styles.scss */
+nav.main-menu a:hover, nav.main-menu a:active {
+  color: #651e33;
+  text-decoration: underline;
+}
+/* line 149, ../sass/styles.scss */
+nav.main-menu #date-since {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  padding-right: 10px;
+}
+
+/* workshop menu */
+/* line 160, ../sass/styles.scss */
+nav.side-menu ul li {
+  list-style: decimal;
+  margin-bottom: 2px;
+  border-top: 1px dotted #a8a59b;
+  border-bottom: 1px dotted #a8a59b;
+}
+/* line 165, ../sass/styles.scss */
+nav.side-menu ul li a {
+  font-size: 12px;
+}
+
+/*<--- end menus */
+/* --- MAIN ----*/
+/*************************** H1 *************************/
+/* line 179, ../sass/styles.scss */
+h1 {
+  text-shadow: #fff 1px 1px;
+  font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
+  text-transform: uppercase;
+  /* line-height: 1; */
+}
+
+/* line 186, ../sass/styles.scss */
+#main h1 {
+  text-align: center;
+  color: #193c57;
+  font-size: 24px;
+  margin: 0px 0 4px 0;
+  padding-top: 5px;
+}
+
+/* line 194, ../sass/styles.scss */
+#main #col1 h1 {
+  padding-top: 10px;
+  color: #651e33;
+}
+
+/* line 199, ../sass/styles.scss */
+.frontpage #main > div:first-of-type h1 {
+  font-size: 33px;
+  padding: 0 0 4px 0;
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+/*************************** H2 *************************/
+/* line 209, ../sass/styles.scss */
+h2 {
+  color: #9E2F50;
+}
+
+/* line 213, ../sass/styles.scss */
+article h2 {
+  text-transform: capitalize;
+  text-align: center;
+  padding: 5px 0px 3px 0px;
+  background-image: url(../images/subtitle-top.gif), url(../images/subtitle-bottom.gif);
+  background-position: center top, center bottom;
+  background-origin: padding-box, border-box;
+  background-repeat: no-repeat, no-repeat;
+}
+
+/********************************* COLUMNS AND ARTICLES *****************************/
+/* setting up multilple column text in col1 */
+/* line 229, ../sass/styles.scss */
+.frontpage #col1 article {
+  margin: 0px;
+}
+/* line 231, ../sass/styles.scss */
+.frontpage #col1 article .content {
+  -moz-columns: 9em 2;
+  -webkit-columns: 9em 2;
+  columns: 9em 2;
+  margin: 0px 0px 10px 0px;
+}
+/* line 234, ../sass/styles.scss */
+.frontpage #col1 article .content h1 {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+}
+
+/* line 241, ../sass/styles.scss */
+#main {
+  /* border-top: solid 1px #9E2F50; */
+  padding: 15px 0;
+  clear: both;
+}
+
+/* line 247, ../sass/styles.scss */
+#main > div {
+  float: left;
+}
+
+/* line 251, ../sass/styles.scss */
+#main > div:last-of-type,
+#col4 {
+  /*float: right;*/
+}
+
+/* line 259, ../sass/styles.scss */
+#col1 article {
+  border-top: 4px solid #A7A59B;
+}
+
+/* line 263, ../sass/styles.scss */
+#col1 article:first-of-type {
+  border-top: none;
+}
+
+/*
+#col2,
+#col3,
+#col4{
+ border-left: solid 1px #979797;
+}
+*/
+/* line 276, ../sass/styles.scss */
+.grid_5 {
+  border-left: solid 1px #979797;
+}
+
+/* line 280, ../sass/styles.scss */
+#col2 article h1,
+#col3 article h1,
+#col4 article h1 {
+  margin-top: 5px;
+  /* padding-left: 5px; */
+}
+
+/* line 287, ../sass/styles.scss */
+#col2 article,
+#col3 article,
+#col4 article {
+  margin-left: 9px;
+  /* padding-left: 5px; */
+}
+
+/* line 294, ../sass/styles.scss */
+#col2 aside h1,
+#col3 aside h1,
+#col4 aside h1 {
+  margin-top: 5px;
+  /* margin-left: 5px; */
+}
+
+/* line 301, ../sass/styles.scss */
+#col1 p {
+  margin-top: 10px;
+}
+
+/* line 305, ../sass/styles.scss */
+#col2 p,
+#col3 p,
+#col4 p {
+  margin: 10px 5px 10px 5px;
+}
+
+/* line 311, ../sass/styles.scss */
+article {
+  margin-bottom: 18px;
+}
+
+/* line 315, ../sass/styles.scss */
+aside article,
+#ad3,
+#ac3 {
+  border: 1px dotted #9E2F50;
+  margin-bottom: 5px;
+}
+
+/********************************* Drop-Caps, etc… ***********************/
+/* Make this fucking thing more specific */
+/*
+#col2 p:nth-of-type(1)::first-letter,
+#col3 p:nth-of-type(1)::first-letter,
+#col4 p:nth-of-type(1)::first-letter{
+font-family: 'AcknowledgementMedium';
+color: #686561;
+letter-spacing: .08em;
+}
+*/
+/***********************  VIDEO **********************/
+/* line 342, ../sass/styles.scss */
+#video {
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* line 347, ../sass/styles.scss */
+#video,
+#col1 article h1 {
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+  clear: both;
+  text-align: center;
+}
+
+/* line 356, ../sass/styles.scss */
+#canvasOverlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /* to avoid seeing the video in color for a second before the JavaScript runs show a black background instead*/
+  background-color: rgba(111, 12, 47, 0.5);
+  margin-bottom: 25px;
+}
+
+/* line 365, ../sass/styles.scss */
+#video-container {
+  width: 388px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 371, ../sass/styles.scss */
+#controls {
+  position: absolute;
+  bottom: 0px;
+  opacity: .9;
+  -webkit-transition: opacity .7s linear;
+  -moz-transition: opacity .7s linear;
+  -ms-transition: opacity .7s linear;
+  -o-transition: opacity .7s linear;
+  transition: opacity .7s linear;
+}
+
+/* line 382, ../sass/styles.scss */
+.hidden {
+  display: none;
+}
+
+/* line 386, ../sass/styles.scss */
+#controls:hover {
+  opacity: 1;
+}
+
+/* line 390, ../sass/styles.scss */
+#playPause {
+  width: 25px;
+  height: 25px;
+  float: left;
+  text-indent: -9999em;
+  border-right: solid 1px #000;
+}
+
+/* line 398, ../sass/styles.scss */
+.paused {
+  background: rgba(111, 12, 47, 0.5) url(../images/controls-sprite.png) no-repeat 0 -75px;
+}
+
+/* line 402, ../sass/styles.scss */
+.playing {
+  background-position: 0 -50px;
+}
+
+/* line 406, ../sass/styles.scss */
+#playPause:hover {
+  cursor: pointer;
+}
+
+/* line 410, ../sass/styles.scss */
+#timer {
+  color: #fff1e0;
+  width: 334px;
+  height: 25px;
+  background: rgba(111, 12, 47, 0.5);
+  float: left;
+  text-align: center;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+/*
+#timer-2 {
+	width: 255px;
+	height: 25px;
+    background: rgba(111, 12, 47, .5);
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    overflow: hidden;
+}
+*/
+/* line 434, ../sass/styles.scss */
+#muteUnmute {
+  float: left;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999em;
+  border-left: solid 1px #000;
+  overflow: hidden;
+}
+
+/* line 443, ../sass/styles.scss */
+.unmuted {
+  background: rgba(111, 12, 47, 0.5) url(../images/controls-sprite.png) no-repeat 0 -25px;
+}
+
+/* line 447, ../sass/styles.scss */
+.muted {
+  background-position: 0 0;
+}
+
+/* line 451, ../sass/styles.scss */
+#muteUnmute:hover {
+  cursor: pointer;
+}
+
+/*<--- END OF VIDEO --*/
+/* Workshop Section */
+/* line 461, ../sass/styles.scss */
+.example {
+  width: 100%;
+  float: left;
+  margin: 30px 0px;
+}
+/* line 465, ../sass/styles.scss */
+.example h2 {
+  float: none;
+  margin: 10px auto 20px auto;
+}
+
+/************************ FOOTER **********************/
+/* line 474, ../sass/styles.scss */
+footer {
+  clear: both;
+  float: none;
+}
+/* line 477, ../sass/styles.scss */
+footer a {
+  color: #ffa900;
+}
+/* line 480, ../sass/styles.scss */
+footer p {
+  font-family: Arial;
+  font-size: 14px;
+  color: #fff1e0;
+  margin: 0px 10px 10px 10px;
+}
+/* line 486, ../sass/styles.scss */
+footer h1 {
+  font-size: 200%;
+  color: #dfb1b0;
+  letter-spacing: 1px;
+  text-shadow: none;
+  margin: 0px 10px 8px 10px;
+}
+/* line 493, ../sass/styles.scss */
+footer img {
+  padding: 0px 10px 10px 0px;
+  float: left;
+}
+/* line 497, ../sass/styles.scss */
+footer section {
+  float: left;
+}
+/* line 500, ../sass/styles.scss */
+footer #about-us {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #411930;
+  border-top: solid 6px #dfb1b0;
+  border-bottom: solid 6px #dfb1b0;
+  margin-bottom: 5px;
+}
+
+/* line 513, ../sass/styles.scss */
+#fine-print {
+  clear: both;
+  height: 30px;
+  width: 100%;
+  background: transparent;
+}
+/* line 518, ../sass/styles.scss */
+#fine-print .bottom-logo {
+  float: right;
+}
+
+/********************************* In-Line Text **************************/
+/* line 526, ../sass/styles.scss */
+small {
+  font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
+  text-transform: uppercase;
+  line-height: 32px;
+  padding: 0 0 0 7px;
+  letter-spacing: .08em;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px;
+  float: left;
+}
+
+/* line 536, ../sass/styles.scss */
+mark {
+  background-color: #FFFBA1;
+  padding: 0 5px;
+  /* 	line-height: 32px; */
+  padding: 0 4px;
+  text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 4px;
+  /* 	float: left;  */
+}
+
+/* line 548, ../sass/styles.scss */
+hgroup.form {
+  margin-bottom: 2em;
+}

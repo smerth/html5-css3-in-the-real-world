@@ -1,192 +1,372 @@
 <!doctype html>
-<html class="no-js" lang="en" manifest="herald.appcache">
+<html class="no-js container_24 frontpage" lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>The HTML5 Herald</title>
-  <link rel="stylesheet" href="css/normalize.css?v=1.0">
-  <link rel="stylesheet" href="css/style.css?v=1.0.7">
+    <meta charset="utf-8">
 
-  <script src="js/modernizr.min.js"></script>
+    <!--PAGE METADATA -->
+    <title>The Hello World News - Lightly toasted code, seasoned with msg, then freeze dried!</title>
+    <meta name="description" content="Tea Notes - Learn about tea from a chinese perspctive!">
+    <meta name="author" content="Tea Notes Co. Ltd.">
+    <meta http-equiv="X-UA-compatible" content="IE-Edge">
 
+    <!--CSS STYLESHEETS -->
+    <link rel="stylesheet" href="stylesheets/screen.css" media="screen, projection" />
+    <link rel="stylesheet" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" href="stylesheets/ie.css" media="screen, projection" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+
+    <!--SITEWIDE JS -->
+    <script type="text/javascript" src="js/modernizr-1.7.min.js"></script>
+
+    <!--PAGE SPECIFIC JS -->
+
+    <!-- FRONTPAGE - ONE SOLUTION FOR COLLAPSING TEXT ON ARTICLES -->
+    <script language="JavaScript" type="text/javascript">
+        if (document.getElementById) {
+            document.writeln('<style type="text/css">')
+            document.writeln('.texter {display:none} @media print {.texter {display:block;}}')
+            document.writeln('</style>')
+        }
+
+        function openClose(theID) {
+            if (document.getElementById(theID).style.display == "block") {
+                document.getElementById(theID).style.display = "none"
+            } else {
+                document.getElementById(theID).style.display = "block"
+            }
+        }
+    </script>
 
 </head>
-<body class="hyphenate">
-<header>
-    <h1><span>The </span><a href="index.html">HTML5 <img src="images/logo.png" alt=""> Herald</a></h1>
-    <h2 class="tagline">Produced with That Good ol' Timey HTML5 &amp; CSS3</h2>
-  <p id="volume">Vol. MMXI</p>
-  <p id="issue"><time datetime="1904-06-04" pubdate>June 4, 1904</time></p>
-  <nav>
-    <ul>
-      <li><a href="#top">Home</a></li>
-      <li><a href="register.html">Sign Up</a></li>
-      <li><a href="canvas.html">Canvas Demos</a></li>
-    </ul>
-  </nav>
-</header>
-<main>
-  <div id="primary">
-    <article id="ac1">
-      <div class="vc">
-        <video width="373" height="280" preload="" id="video" poster="images/ford-plane-still.png">
+
+
+
+
+<!-- ************************* BODY **************************** -->
+
+<body class="hyphenate index frontpage">
+
+    <!-- ************************* HEADER ************************** -->
+    <header class="container_24">
+        <hgroup>
+            <a href="index.html">
+                <h1><span class="the">The</span>
+                    <div id="logo">
+                        <object height="80px" width="80px" data="svg/logo.svg" type="image/svg+xml" style="float:left">     
+					<img src="../svg/logo.svg" alt="Site Logo"/>
+					</object>
+                    </div>
+                    ello World News
+                </h1>
+            </a>
+            <h2 class="slogan">Lightly toasted code, seasoned with msg, then freeze dried!</h2>
+        </hgroup>
+
+        <nav class="main-menu">
+            <p id="volume">Vol. MMXIII</p>
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li> | </li>
+                <li><a href="register.html">Quotation</a></li>
+            </ul>
+            <span id="date-since"><time datetime="2008-03-11" pubdate>Since Mar 11, 2008</time></span>
+        </nav>
+    </header>
+    <!-- ************************** MAIN ***************************** -->
+    <div id="main" class="container_24">
+
+        <!-- ************************** COLUMN ONE *********************** -->
+
+        <!-- *************** Video - Important Message **************** -->
+        <div id="col1" class="grid_9">
+            <article id="ac1">
+                <div id="video-container">
+                    <video width="386" height="291" id="video" preload poster="images/poster-1.jpg" controls>
           <!-- MP4 must be first for iPad! -->
-          <source src="media/ford-plane-takes-off.mp4" type="video/mp4"><!-- Safari / iOS video -->
-          <source src="media/ford-plane-takes-off.ogv" type="video/ogg"><!-- Firefox / Opera / Chrome10 -->
-            <!-- fallback to Flash: -->
-          <object width="373" height="280" type="application/x-shockwave-flash" data="jwplayer/player.swf">
-            <!-- Firefox uses the 'data' attribute above, IE/Safari uses the param below -->
-            <param name="movie" value="jwplayer/player.swf">
-            <param name="allowFullScreen" value="true">
-            <param name="wmode" value="transparent">
-            <param name="flashvars" value="controlbar=over&amp;image=images/ford-plane-still.png&amp;file=../media/ford-plane-takes-off.mp4">
-            <!-- fallback image. note the title field below, put the title of the video there -->
-            <img src="images/ford-plane-still.png" id="video-still" width="373" height="280" alt="Airplane" title="No video playback capabilities, please download the video below">
-          </object>
+          <source src="media/example.mp4" type="video/mp4"><!-- Safari / iOS video -->
+          <source src="media/example.webm" type="video/webm"><!-- Firefox / Opera / Chrome10 -->			
         </video>
-      <canvas id="canvasOverlay" width="373" height="280"></canvas>
-      <div class="ctrl">
-        <div id="playPause" class="pp paused" tabindex="1" title="Play">Play/Pause</div>
-        <div id="timer" class="timer">00:00</div>
-        <div id="muteUnmute" class="mu unmuted" tabindex="2">Mute/Un­mute</div>
-      </div><!-- #controls -->
+                    <div id="controls" class="hidden">
+                        <div id="playPause" class="paused" tabindex="1">Play/Pause</div>
+                        <div id="timer">00:00</div>
+                        <div id="muteUnmute" class="unmuted" tabindex="2">Mute/Unmute</div>
+                    </div>
+                    <!-- #controls -->
+                </div>
+                <!-- /#video-container -->
 
-    </div><!-- /#video-container -->
+                <h1>Video is the final frontier, and now we have conquered it!</h1>
+                <div class="content">
+                    <p>Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.</p>
+                    <p>In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum
+                        elit, eu euismod magna sapien ut nibh. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>
+                </div>
+            </article>
 
-    <h1>Video is the final frontier, and now we have conquered it!</h1>
-      <div class="content">
-        <p>Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.</p>
-        <p>In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>
-        <p>Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-        <p>Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-      </div>
-    </article>
-    <article>
-      <h1>Great Things Are Possible with CSS Columns! Pip Pip Pip!</h1>
-      <div class="content">
-        <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. </p>
-        <p>Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-        <p>Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. </p>
-      </div>
-    </article>
-  </div>
-  <div id="secondary">
-    <article id="ac2">
-      <header>
-        <h1>Text Shadow is the New Black</h1>
-        <h2>How do we do it?</h2>
-      </header>
-      <div class="content">
-        <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. </p>
-      </div>
-    </article>
+            <!-- *************** Article - Animate with CSS3 Transitions **************** -->
+            <article>
+                <h1>Pork Loin Chicken Ham Hock Turducken Pancetta Ball</h1>
+                <article id="ad2">
+                </article>
+                <div class="content">
+                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                    <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. </p>
+                    <p>Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat
+                        neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                </div>
 
-    <article id="ac3">
-      <h1>Wai-Aria? HAHA!</h1>
-      <h2 id="catHeading">Form Accessibility</h2>
+            </article>
 
-      <img src="images/cat.png" id="cat" alt="WAI-ARIA Cat">
-      <div class="content">
-      	<p id="mouseContainer" class="mc">
-			    <img src="images/computer-mouse-pic.png" alt="computer mouse" id="mouse1" draggable="true">
-				  <img src="images/computer-mouse-pic.png" alt="computer mouse" id="mouse2" draggable="true">
-				  <img src="images/computer-mouse-pic.png" alt="computer mouse" id="mouse3" draggable="true">
-        </p>
-        <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum.</p>
-        <p>Nam vestibulum, arcu sodales feugiat.</p>
-      </div>
-    </article>
-
-    <article id="ac4">
-      <h1>Modernizr Times</h1>
-      <p>A New Era</p>
-
-      <div class="content">
-        <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum.</p>
-        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. </p>
-      </div>
-    </article>
-  </div>
-
-  <div id="tertiary">
-    <aside>
-
-      <article class="ad-ad1">
-        <h1>Wanted</h1>
-        <p>Dead or Alive</p>
-        <a href="http://sitepoint.com/books/htmlcss1/" class="wanted">&lt;HTML5&gt; &amp; {CSS3}</a>
-        <p>Reward: Happiness and satisfaction</p>
-      </article>
-
-      <article class="ad-ad2">
-        <h1>Put your <span>dukes</span> up sire</h1>
-        <p>It&rsquo;s time for a good old thrashing.<br>
-           I will rotate your moustache OFF!</p>
-      </article>
-      <article class="ad-ad3">
-        <h1><a href="http://sitepoint.com/books/htmcss1/">HTML5 and CSS3 <br/>Now in Book Form!</a></h1>
-      </article>
-      <article class="ad-ad4">
-        <div id="mapDiv">
-        	<h1 id="geoHeading">Where in the world are you?</h1>
-  		    <form id="geoForm">
-  			     <input type="button" id="geobutton" value="Tell us!">
-  		    </form>
-  		    <div class="spin" id="spinner"></div>
+            <!-- *************** Article - Multi-column layout **************** -->
+            <article>
+                <h1>CSS3 Multicolumn Layout</h1>
+                <div class="content">
+                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                    <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. </p>
+                </div>
+            </article>
         </div>
-      </article>
-    </aside>
+        <!-- ************************ COLUMN TWO ************************* -->
+
+        <div id="col2" class="grid_5">
 
 
-    <article id="ac5">
-      <header>
-        <h1>CSS Transitions - The State of Play</h1>
-        <h2>The future?</h2>
-      </header>
+            <article>
+                <div onClick="openClose('a1')" style="cursor:hand; cursor:pointer">
 
-      <div class="content">
-        <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.</p>
-        <p>Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                    <hgroup>
+                        <h1>Story Headline</h1>
+                        <h2>This is an expanding text story!</h2>
+                    </hgroup>
 
-        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at. vestibulum. Nulla at.</p>
-        <p>Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                    <div class="article-preview">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+                    </div>
 
-        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at. vestibulum. Nulla at.</p>
-      </div>
-    </article>
+                </div>
 
-  </div>
-</main>
+                <div id="a1" class="texter">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <br /><br />
+                </div>
+            </article>
 
-<footer>
-  <article id="authors">
-    <section><h1>Alexis Goldstein</h1>
-        <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-    </section>
-    <section><h1>Louis Lazaris</h1>
-      <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-    </section>
-    <section>
-      <h1>Estelle Weyl</h1>
-              <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
-    </section>
 
-  </article>
-  <section id="footerinfo">
-    <small>&copy; SitePoint </small>
-    <p><a href="http://www.sitepoint.com"><img src="images/logo-sp.png" alt="SitePoint" width="70" height="23"></a></p>
-  </section>
-</footer>
-<script src="js/hyphenator.js"></script>
-<script src="js/raphael-min.js"></script>
-<script src="js/videoControls.js"></script>
-<script src="js/dragDrop.js"></script>
-<script src="js/geolocation.js"></script>
-<script src="js/videoToBW.js"></script>
-<!-- google maps API -->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+            <article id="ac2">
+                <hgroup>
+                    <h1>Text Shadow is the New Black</h1>
+                    <h2>How do we do it?</h2>
+                </hgroup>
+                <div class="content">
+                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                    <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. </p>
+                </div>
+            </article>
+
+            <article id="ac3">
+                <hgroup>
+                    <h1>Stuff to read</h1>
+                    <h2>Form Accessibility</h2>
+                </hgroup>
+
+
+                <div class="content">
+
+                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum.</p>
+                    <p>Nam vestibulum, arcu sodales feugiat.</p>
+                </div>
+            </article>
+
+            <article id="ac4">
+                <hgroup>
+                    <h1>Modernizr Times</h1>
+                    <h2>A New Era</h2>
+                </hgroup>
+
+                <div class="content">
+                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum.</p>
+
+                </div>
+            </article>
+
+            <article id="ad3">
+                <h1>STYLE <span>PUNCH</span> UP!</h1>
+                <p>It&rsquo;s time for a good old thrashing.<br> I will rotate your moustache OFF!</p>
+            </article>
+
+
+        </div>
+
+
+        <!-- ********************** COLUMN THREE **************************** -->
+
+        <div id="col3" class="grid_5">
+            <article id="ac2">
+                <hgroup>
+                    <h1>Get your site done right</h1>
+                    <h2>With HTML5 & CSS3</h2>
+                </hgroup>
+                <div class="content">
+                    <p>Bacon ipsum dolor amet frankfurter picanha ham hock pork chop shankle ribeye tri-tip, ham strip steak jerky andouille meatball rump prosciutto venison. Tail filet mignon pork loin rump meatball chicken.</p>
+                    <p>Bacon cow porchetta rump. Boudin<mark>jerky ball tip porchetta</mark> short loin landjaeger. Pork belly swine boudin, shoulder turkey capicola corned beef beef sausage chuck pastrami.</p>
+
+                    <p>Turkey chicken landjaeger, alcatra cow porchetta tri-tip ball tip drumstick flank. Salami doner picanha beef turducken frankfurter corned beef sirloin bacon flank. Rump pork chop fatback spare ribs leberkas short loin boudin cow jowl.</p>
+
+                </div>
+            </article>
+
+            <article id="ac3">
+                <hgroup>
+                    <h1>NUKE GODZILLA!</h1>
+                    <h2 id="monsterHeading">- Drag Bombs Onto Monster - </h2>
+                </hgroup>
+
+                <img src="images/godzilla-guy.png" id="monster" alt="WAI-ARIA Monster">
+                <div class="content">
+                    <p id="bombContainer">
+                        <img src="images/bomb.png" width="30" alt="bomb 1 for monster" id="bomb1" draggable="true">
+                        <img src="images/bomb.png" width="30" alt="bomb 2 for monster" id="bomb2" draggable="true">
+                        <img src="images/bomb.png" width="30" alt="bomb 3 for monster" id="bomb3" draggable="true">
+                    </p>
+                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum.</p>
+                    <p>Nam vestibulum, arcu sodales feugiat.</p>
+                </div>
+            </article>
+
+
+
+
+
+            <article id="ac4">
+                <hgroup>
+                    <h1>Modernizr Times</h1>
+                    <h2>A New Era</h2>
+                </hgroup>
+
+                <div class="content">
+                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum.</p>
+                    <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. </p>
+                </div>
+            </article>
+        </div>
+
+
+        <!-- *********************** COLUMN FOUR ***************************** -->
+
+
+        <div id="col4" class="grid_5">
+            <aside>
+
+                <article id="ad1">
+                    <h1>Wanted</h1>
+                    <p>Help with...</p>
+                    <a href="http://sitepoint.com/books/htmlcss1/" class="wanted">&lt;HTML5&gt; &amp; {CSS3}</a>
+                    <p>(We highly recommend this book!)</p>
+                </article>
+
+
+
+                <article id="ac6">
+                    <hgroup>
+                        <h1>Geolocation Services</h1>
+                        <h2>The future?</h2>
+                    </hgroup>
+
+                    <article id="ad4">
+                        <div id="mapDiv">
+                            <h1 id="geoHeading">Where are you now?</h1>
+                            <form id="geoForm">
+                                <input type="button" id="geobutton" value="Find Yourself!">
+                            </form>
+                            <div id="spinner"></div>
+                        </div>
+                    </article>
+
+                    <div class="content">
+                        <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at. vestibulum. Nulla at.</p>
+                        <p>Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+
+
+                    </div>
+
+                </article>
+            </aside>
+
+            <article id="ac5">
+                <hgroup>
+                    <h1>CSS Transitions - The State of Play</h1>
+                    <h2>The future?</h2>
+                </hgroup>
+
+                <div class="content">
+                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                    <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum.</p>
+                    <p>Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+
+
+                </div>
+            </article>
+        </div>
+    </div>
+    <!-- #main -->
+    <!-- **************************** FOOTER ******************************* -->
+    <footer class="container_24">
+
+        <section id="about-us" class="container_24">
+            <section id="bio" class="grid_8">
+                <h1>About the Developer</h1>
+                <p>
+                    Beef corned beef brisket, tongue beef ribs <mark>kielbasa</mark> pig frankfurter. Pork loin t-bone flank brisket.
+                </p>
+                <p>
+                    Tenderloin ground round tail sirloin, andouille brisket <mark>shoulder beef ribs</mark> venison. Shank picanha filet mignon andouille sirloin short loin.
+                </p>
+
+            </section>
+
+
+
+
+            <section id="company" class="grid_8">
+                <h1>About the Company</h1>
+                <p>Shank jerky ham hock kielbasa spare ribs t-bone shoulder meatloaf chuck boudin andouille cupim ball tip pork loin cow. Meatball salami ball tip boudin t-bone pancetta short ribs kielbasa ham ham hock jowl.</p>
+            </section>
+            <section id="services" class="grid_8">
+                <h1>Contact</h1>
+                <p>The structure and theming of this site and the clever use of HTML5 and CSS3 is taken directly from the demo site accompanying the <a href="http://www.sitepoint.com">SitePoint</a> book: <a href="http://sitepoint.com/books/htmcss1/">HTML5 & CSS3</a>.
+                </p>
+                <p>If you are starting to get to grips with HTML5 you could not pick a better place to start. I found this book and the accompanying demo site, clear, concise, and actually, a lot of fun to work through. I whole-heartedly recommend it.</p>
+                <p>If your looking for a great resource to stay on top of web programming you should check out the sitepoint website!</p>
+            </section>
+        </section>
+        <!-- end authors -->
+
+        <!-- *************  COPYRIGHT AND FINE PRINT ******************* -->
+
+
+    </footer>
+    <!-- END FOOTER -->
+
+
+
+    <!-- ************* SCRIPTS *************** -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+
+    <script src="js/hyphenator.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/videoControls.js"></script>
+    <script src="js/dragndrop.js"></script>
+    <script src="js/geolocation.js"></script>
+
+
+    <!-- google maps API -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+
 </body>
+
 </html>

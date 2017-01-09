@@ -1,0 +1,183 @@
+/*  I need a mixin for all images included in column articles, it should size the image, center the image, and add appropriate spacing...  use the selector ".article-image"   */
+
+
+
+
+
+
+
+
+/*
+.video-column{
+float: right;
+}
+*/
+
+
+
+
+
+
+                                                           /******************** CSS3 DEMO - MOVING BIKE ***************/
+#col1 #ad2 h1 {
+text-align: center;
+}
+#ad2:hover {
+background-position: 150% 88%, 0 0;
+}
+#ad2 {
+height: 85px;
+background-image:
+    url(../images/rocket.png), 
+    url(../images/gradient.svg);
+  /* Mozilla gradient syntax */
+background-image:
+    url(../images/rocket.png),
+    -moz-linear-gradient(0% 0% 270deg,
+    rgba(158,47,80,0.4) 0, 
+    rgba(158,47,80,0) 37%,
+    rgba(158,47,80,0) 83%, 
+    rgba(158,47,80,0.06) 92%, 
+    rgba(158,47,80,0) 98%);
+  /* W3C gradient syntax for WebKit */
+background-image:
+    url(../images/rocket.png),
+    -webkit-linear-gradient(top,
+rgba(158,47,80,0.4) 0, 
+rgba(158,47,80,0) 37%,
+rgba(158,47,80,0) 83%, 
+rgba(158,47,80,0.06) 92%, 
+rgba(158,47,80,0) 98%);
+  /* W3C gradient syntax for Opera */
+background-image:
+    url(../images/rocket.png),
+    -o-linear-gradient(top,
+rgba(158,47,80,0.4) 0, 
+rgba(158,47,80,0) 37%,
+rgba(158,47,80,0) 83%, 
+rgba(158,47,80,0.06) 92%, 
+rgba(158,47,80,0) 98%);
+  /* Unprefixed W3C syntax */ 
+background-image:
+    url(../images/rocket.png),
+    linear-gradient(top,
+rgba(158,47,80,0.4) 0, 
+rgba(158,47,80,0) 37%,
+rgba(158,47,80,0) 83%, 
+rgba(158,47,80,0.06) 92%, 
+rgba(158,47,80,0) 98%);
+  /* Old WebKit syntax */
+background-image:
+    url(../images/rocket.png), 
+    -webkit-gradient(linear, 
+    from(rgba(0,0,0,0.4)), 
+    color-stop(37%, rgba(0,0,0,0)),
+    color-stop(83%, rgba(0,0,0,0)), 
+    color-stop(92%, rgba(0,0,0,0.16)), 
+    color-stop(98%, rgba(0,0,0,0)));
+
+background-position: 1% 88%, 0 0;
+  -webkit-transition: background-position  1s linear 250ms;
+  -moz-transition: background-position  1s linear 250ms;
+  -o-transition: background-position  1s linear 250ms;
+  transition: background-position  1s linear 250ms;
+}
+
+
+                                                 /******************** CSS3 DEMO - TEXT TRANSFORM ***************/
+#ad3 {
+background-image:url(../images/dukes.png);
+background-position: bottom left;
+-webkit-transition: transform  2s linear 250ms;
+-moz-transition: transform  2s linear 250ms;
+-o-transition: transform  2s linear 250ms;
+transition: transform  2s linear 250ms;
+}
+#ad3 p {
+font-size: 0.85em;
+}
+
+
+                                                      /******************** CSS3 DEMO - FEED THE Monster ***************/
+
+#monster {
+margin: 0 0 0 15px; 
+display: block;
+}
+.draganddrop #bombContainer{
+text-align:center;
+}
+.no-draganddrop #bombContainer{
+visibility:hidden;
+height:0px;
+}
+
+
+                            /******************** CSS3 DEMO - GEOLOCATION ***************/
+#col4 article #ad4{
+margin: 10px 0px 0px 0px;
+padding: 0;
+}
+
+.no-geolocation #ad4 {
+display: none;
+}
+#ad4 h1 {
+display: none;
+}	
+#ad4 {
+
+border: none;
+height:208px;
+
+background-image:url(../images/map-bkg.png);
+background-position: top center;
+
+position:relative;
+
+}
+#mapDiv {
+/* margin-left: -9px; */
+padding-bottom: 0px;
+height: 208px;
+}
+#spinner {
+position:absolute;
+top:18px;
+left:35px;
+}
+
+
+/****************************** Text Transformations *******************************/
+#ad3 h1 {
+font-size: 20px;
+font-family: AcknowledgementMedium;	
+padding: 0 30px 0 75px;
+line-height:1;
+color: #999;
+margin: 0 0 0 15px;
+}
+#ad3 h1 span {
+font-size: 20px;
+color: #999999;
+display:inline-block;
+-webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+-moz-transition: color 0.2s ease-out, -moz-transform 0.2s ease-out;
+-o-transition: color 0.2s ease-out, -o-transform 0.2s ease-out;
+transition: color 0.2s ease-out, transform 0.2s ease-out;
+}
+.holding {	
+-moz-transition: all 0.3s ease;
+-webkit-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+#ad3 h1:hover span {
+color: #FB120F;
+-webkit-transform:rotate(10deg) translateX(40px) scale(2); 
+-moz-transform:rotate(10deg) translateX(40px) scale(2); 
+-ms-transform:rotate(10deg) translateX(40px) scale(2); 
+-o-transform:rotate(10deg) translateX(40px) scale(2); 
+transform:rotate(10deg) translateX(40px) scale(2);
+}
+
