@@ -1,12 +1,8 @@
-# HTML5 & CSS3 For The Real World
+# HTML5 & CSS3 Sandbox
 
-This repo is an html sandbox site. It started out with the book code from SitePoint's excellant: HTML5 & CSS3 For The Real World book, which is a good introduction to HTML5 and CSS3. 
+This site started out with the code from SitePoint's excellant: "HTML5 & CSS3 For The Real World" book. Later a grid was added based on the [960 Grid System](http://960.gs/). This site runs a 1056 grid.  The site is not responsive.  But it could be... [unsemantic](http://unsemantic.com). Then the CSS was relaced with SASS and lastly a number of javascript libaries were added.
 
-The first release for this repo is the original book code, if you are interested in the seeing the starting point.
-
-Later a grid was added based on the [960 Grid System](http://960.gs/) although this site runs a 1056 grid.  The site is not responsive.  But it could be... [unsemantic](http://unsemantic.com).
-
-Later still the css was relaced with sass and lastly a number of javascript libaries were added.
+![App Screenshot](Screenshot.jpg)
 
 ## Usage
 
