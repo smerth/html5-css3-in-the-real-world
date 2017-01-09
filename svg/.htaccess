@@ -1,0 +1,7 @@
+# SVG.
+#   Required for svg webfonts on iPad
+#   twitter.com/FontSquirrel/status/14855840545
+AddType image/svg+xml svg
+AddType image/svg+xml svgz
+AddType image/svg+xml svg svgz 
+AddEncoding gzip     svgz

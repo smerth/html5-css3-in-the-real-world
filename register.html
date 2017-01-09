@@ -1,113 +1,296 @@
 <!doctype html>
-<html lang="en" manifest="herald.appcache">
-  <head>
+<html class="no-js container_24 register" lang="en">
+
+<head>
     <meta charset="utf-8">
-    <title>The HTML5 Herald</title>
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/style.css?v=1.0"/>
-    <script src="js/modernizr.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <div class="h">
-        <h1><span>The </span><a href="index.html">HTML5 <img src="images/logo.png" class="logo" alt="HTML5 Herald"> Herald</a></h1>
-        <h2 class="tagline">Produced with That Good ol' Timey HTML5 &amp; CSS3</h2>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#top">Home</a></li>
-          <li><a href="register.html">Sign Up</a></li>
-          <li><a href="canvas.html">Canvas Demos</a></li>
-        </ul>
-      </nav>
-      <p class="volume">Vol. MMXI</p>
-      <p class="issue"><time datetime="1904-06-04" pubdate>June 4, 1904</time></p>
+
+    <!--PAGE METADATA -->
+    <title>The Hello World News - Lightly toasted code, seasoned with msg, then freeze dried!</title>
+    <meta name="description" content="ello Code News - We code brilliant web, mobile and e-commerce apps!">
+    <meta name="author" content="Hello Code News Co. Ltd.">
+    <meta http-equiv="X-UA-compatible" content="IE-Edge">
+
+
+    <!--CSS STYLESHEETS -->
+    <link rel="stylesheet" href="stylesheets/screen.css" media="screen, projection" />
+    <link rel="stylesheet" href="stylesheets/print.css" media="print" />
+    <link rel="stylesheet" href="stylesheets/ie.css" media="screen, projection" />
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+
+    <!--SITEWIDE JS -->
+    <script type="text/javascript" src="js/modernizr-1.7.min.js"></script>
+
+    <!--PAGE SPECIFIC JS -->
+
+</head>
+
+
+<!-- ************************* BODY **************************** -->
+
+<body class="hyphenate index inner-page">
+
+
+    <!-- ************************* HEADER ************************** -->
+    <header class="container_24">
+        <hgroup>
+            <a href="index.html">
+                <h1><span class="the">The</span>
+                    <div id="logo">
+                        <object type="image/svg+xml" data="logo.svg" width="100" height="100" style="float:left">     
+					<img src="../svg/logo.svg" alt="Site Logo"/>
+					</object>
+                    </div>
+                    ello World News
+                </h1>
+            </a>
+            <h2 class="slogan">Lightly toasted code, seasoned with msg, then freeze dried!</h2>
+        </hgroup>
+
+        <nav class="main-menu">
+            <p id="volume">Vol. MMXIII</p>
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li> | </li>
+                <li><a href="register.html">Quotation</a></li>
+            </ul>
+            <span id="date-since"><time datetime="2008-03-11" pubdate>Since Mar 11, 2008</time></span>
+        </nav>
     </header>
 
-    <form id="register" method="post">
-      <h1>Sign Me Up!</h1>
-      <p>I would like to receive your fine publication.</p>
 
-      <ul>
-        <li>
-          <label for="name">My name is:</label>
-          <input type="text" id="name" name="name" required>
-        </li>
-        <li>
-          <label for="email">My email address is:</label>
-          <input type="email" id="email" name="email" required>
-        </li>
-        	<li>
-            <label for="rememberme">Remember me on this computer</label>
-            <input type="checkbox"  value="yes"  id="rememberme">
-          </li>
-          <li>
-            <label for="url">My website is located at:</label>
-            <input type="url" id="url" name="url" placeholder="http://example.com">
-          </li>
-          <li>
-            <label for="password">I would like my password to be:</label>
-            <p>(at least 6 characters, no spaces)</p>
-            <input type="password" id="password" name="password" required pattern="\S{6,}">
-          </li>
-          <li>
-            <label for="rating">On a scale of 1 to 10, my knowledge of HTML5 is:</label>
-            <input min="1" max="10" id="rating" name="rating" type="range">
-          </li>
-          <li>
-            <label for="startdate">Please start my subscription on:</label>
-            <input type="date" id="startdate" name="startdate" min="1904-03-17" max="1904-05-17" required>
-          </li>
-          <li>
-            <label for="quantity">I would like to receive <input type="number" name="quantity" id="quantity" min="1" max="10" value="1"> copies of <cite>The HTML5 Herald</cite>.</label>
-          </li>
-          <li>
-            <label for="upsell">Also sign me up for <cite>The CSS3 Chronicle</cite></label>
-            <input id="upsell" name="upsell" type="checkbox">
-          </li>
-      </ul>
-      <input type="submit" id="register-submit" value="Send Post Haste"/>
+
+    <!-- ********************************************************* FORM HEADER ******************************************************* -->
+
+
+    <hgroup class="form">
+        <h1>Get a Project Estimate!</h1>
+
+        <p>Web projects start at $8,000 USD. </p>
+
+    </hgroup>
+    <!-- ********************************************************* FORM QUESTION LIST ******************************************************* -->
+    <form id="register col1" class="grid_14" method="post">
+        <p>Kindly take a moment to inform us about yourself and your project. This will help us to see how your project aligns with our capabilities and availability. </p>
+        <ul>
+            <li>
+                <label for="name">My name is:</label>
+                <input type="text" id="name" name="name" required>
+            </li>
+            <li>
+                <label for="email">My email address is:</label>
+                <input type="email" id="email" name="email" required>
+            </li>
+            <li><label for="rememberme">Remember me on this computer</label>
+                <input type="checkbox" value="yes" id="rememberme">
+            </li>
+            <li>
+                <label for="url">My website is located at:</label>
+                <input type="url" id="url" name="url" placeholder="http://example.com">
+            </li>
+            <li>
+                <label for="password">I would like my password to be:</label>
+                <p>(at least 6 characters, no spaces)</p>
+                <input type="password" id="password" name="password" required pattern="\S{6,}">
+            </li>
+            <li>
+                <label for="rating">On a scale of 1 to 10, my knowledge of HTML5 is:</label>
+                <input min="1" max="10" id="rating" name="rating" type="range">
+            </li>
+            <li>
+                <label for="startdate">Please start my subscription on:</label>
+                <input type="date" id="startdate" name="startdate" min="1904-03-17" max="1904-05-17" required>
+            </li>
+            <li>
+                <label for="quantity">I would like to receive <input type="number" name="quantity" id="quantity" min="1" max="10" value="1"> copies of <cite>The Hello Code News</cite>.</label>
+            </li>
+            <li>
+                <label for="upsell">Also sign me up for <cite>The Cod Chronicles (that's fishing not coding)</cite></label>
+                <input id="upsell" name="upsell" type="checkbox">
+            </li>
+        </ul>
+
+        <input type="submit" id="register-submit" value="Send Post Haste" />
+
     </form>
-    <footer>
-      <small>&copy; SitePoint </small>
-      <p><a href="http://www.sitepoint.com"><img src="images/logo-sp.gif" alt="SitePoint" width="74" height="20"></a></p>
+
+
+    <!-- ********************************************************* RIGHT HAND VIDEO LIST ******************************************************* -->
+    <div id="col1" class="grid_9 video-column">
+        <article id="video-01">
+            <h1>How To Plan Your Web Project</h1>
+            <div class="content">
+
+                <p>Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.</p>
+            </div>
+            <!-- #content -->
+            <div id="video-container">
+                <video width="386" height="291" id="video" preload poster="images/poster-1.jpg" controls>
+        		<!-- MP4 must be first for iPad! -->
+        		<source src="media/example.mp4" type="video/mp4"><!-- Safari / iOS video -->
+        		<source src="media/example.webm" type="video/webm"><!-- Firefox / Opera / Chrome10 -->			
+			</video>
+                <div id="controls" class="hidden">
+                    <div id="playPause" class="paused" tabindex="1">Play/Pause</div>
+                    <div id="timer">00:00</div>
+                    <div id="muteUnmute" class="unmuted" tabindex="2">Mute/Unmute</div>
+                </div>
+                <!-- #controls -->
+            </div>
+            <!-- /#video-container -->
+        </article>
+        <!-- #article -->
+
+        <article id="video-02">
+            <h1>Choosing a Publishing Platform</h1>
+            <div class="content">
+
+                <p>Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.</p>
+            </div>
+            <!-- #content -->
+            <div id="video-container">
+                <video width="386" height="291" id="video" preload poster="images/poster-1.jpg" controls>
+        		<!-- MP4 must be first for iPad! -->
+        		<source src="media/example.mp4" type="video/mp4"><!-- Safari / iOS video -->
+        		<source src="media/example.webm" type="video/webm"><!-- Firefox / Opera / Chrome10 -->			
+			</video>
+                <div id="controls" class="hidden">
+                    <div id="playPause" class="paused" tabindex="1">Play/Pause</div>
+                    <div id="timer">00:00</div>
+                    <div id="muteUnmute" class="unmuted" tabindex="2">Mute/Unmute</div>
+                </div>
+                <!-- #controls -->
+            </div>
+            <!-- /#video-container -->
+        </article>
+        <!-- #article -->
+
+        <article id="video-03">
+            <h1>Leveraging Social Media</h1>
+            <div class="content">
+
+                <p>Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.</p>
+            </div>
+            <!-- #content -->
+            <div id="video-container">
+                <video width="386" height="291" id="video" preload poster="images/poster-1.jpg" controls>
+        		<!-- MP4 must be first for iPad! -->
+        		<source src="media/example.mp4" type="video/mp4"><!-- Safari / iOS video -->
+        		<source src="media/example.webm" type="video/webm"><!-- Firefox / Opera / Chrome10 -->			
+			</video>
+                <div id="controls" class="hidden">
+                    <div id="playPause" class="paused" tabindex="1">Play/Pause</div>
+                    <div id="timer">00:00</div>
+                    <div id="muteUnmute" class="unmuted" tabindex="2">Mute/Unmute</div>
+                </div>
+                <!-- #controls -->
+            </div>
+            <!-- /#video-container -->
+        </article>
+        <!-- #article -->
+
+
+    </div>
+    <!-- #video column -->
+
+
+    <!-- **************************** FOOTER ******************************* -->
+    <footer class="container_24">
+
+        <section id="about-us" class="container_24">
+            <section id="bio" class="grid_8">
+                <h1>About the Developer</h1>
+                <p>
+                    Beef corned beef brisket, tongue beef ribs <mark>kielbasa</mark> pig frankfurter. Pork loin t-bone flank brisket.
+                </p>
+                <p>
+                    Tenderloin ground round tail sirloin, andouille brisket <mark>shoulder beef ribs</mark> venison. Shank picanha filet mignon andouille sirloin short loin.
+                </p>
+
+            </section>
+
+
+
+
+            <section id="company" class="grid_8">
+                <h1>About the Company</h1>
+                <p>Shank jerky ham hock kielbasa spare ribs t-bone shoulder meatloaf chuck boudin andouille cupim ball tip pork loin cow. Meatball salami ball tip boudin t-bone pancetta short ribs kielbasa ham ham hock jowl.</p>
+            </section>
+            <section id="services" class="grid_8">
+                <h1>Contact</h1>
+                <p>The structure and theming of this site and the clever use of HTML5 and CSS3 is taken directly from the demo site accompanying the <a href="http://www.sitepoint.com">SitePoint</a> book: <a href="http://sitepoint.com/books/htmcss1/">HTML5 & CSS3</a>.
+                </p>
+                <p>If you are starting to get to grips with HTML5 you could not pick a better place to start. I found this book and the accompanying demo site, clear, concise, and actually, a lot of fun to work through. I whole-heartedly recommend it.</p>
+                <p>If your looking for a great resource to stay on top of web programming you should check out the sitepoint website!</p>
+            </section>
+        </section>
+        <!-- end authors -->
+
+        <!-- *************  COPYRIGHT AND FINE PRINT ******************* -->
+
+
     </footer>
+    <!-- END FOOTER -->
+
+
+
+    <!-- ************* SCRIPTS *************** -->
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <!-- jQuery version might not be the latest; check jquery.com -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script>
-      if (!Modernizr.input.placeholder) {
-      	$("input[placeholder], textarea[placeholder]").each(function(){
-      		if ($(this).val() == "") {
-      			$(this).val($(this).attr("placeholder"));
-      			$(this).focus(function(){
-      				if ($(this).val() == $(this).attr("placeholder")) {
-      					$(this).val("");
-      					$(this).removeClass('placeholder');
-      				}
-      			});
-      			$(this).blur(function(){
-      				if ($(this).val() == "") {
-      					$(this).val($(this).attr("placeholder"));
-      					$(this).addClass('placeholder');
-      				}
-      			});
-      		}
-      	});
+        !window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.5.2.min.js"%3E%3C/script%3E'))
+    </script>
 
-      	$('form').submit(function(){
-      		// first do all the checking for required element and form validation.
-      		// Only remove placeholders before final submission
-      		var placeheld = $(this).find('[placeholder]');
-      		for (var i = 0; i < placeheld.length; i++) {
-      			if (($(placeheld[i]).val() == $(placeheld[i]).attr('placeholder'))) {
-      				// if not required, set value to empty before submitting
-      				$(placeheld[i]).attr('value', '');
-      			}
-      		}
+    <script src="js/hyphenator.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/videoControls.js"></script>
+    <script src="js/dragDrop.js"></script>
+    <script src="js/geolocation.js"></script>
 
-      	});
-      }
-    	</script>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-      <script type="text/javascript" src="js/rememberMe.js"></script>
 
-  </body>
+    <!-- google maps API -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+
+
+    <script type="text/javascript" src="js/rememberMe.js"></script>
+
+    <script>
+        if (!Modernizr.input.placeholder) {
+            $("input[placeholder], textarea[placeholder]").each(function() {
+                if ($(this).val() == "") {
+                    $(this).val($(this).attr("placeholder"));
+                    $(this).focus(function() {
+                        if ($(this).val() == $(this).attr("placeholder")) {
+                            $(this).val("");
+                            $(this).removeClass('placeholder');
+                        }
+                    });
+                    $(this).blur(function() {
+                        if ($(this).val() == "") {
+                            $(this).val($(this).attr("placeholder"));
+                            $(this).addClass('placeholder');
+                        }
+                    });
+                }
+            });
+
+            $('form').submit(function() {
+                // first do all the checking for required element and form validation. 
+                // Only remove placeholders before final submission
+                var placeheld = $(this).find('[placeholder]');
+                for (var i = 0; i < placeheld.length; i++) {
+                    if (($(placeheld[i]).val() == $(placeheld[i]).attr('placeholder'))) {
+                        // if not required, set value to empty before submitting
+                        $(placeheld[i]).attr('value', '');
+                    }
+                }
+
+            });
+        }
+    </script>
+
+
+</body>
+
 </html>

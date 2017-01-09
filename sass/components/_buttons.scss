@@ -1,0 +1,43 @@
+                                            /******************** CSS3 DEMO - BIG BUTTON ***************/
+#ad1 h1 {
+  font-family: AcknowledgementMedium;
+  letter-spacing: 0.1em;
+  font-size: 30px;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+#ad1 h1:first-letter {
+  letter-spacing: -0.1em;
+}
+#ad1 p {
+/*   margin: 0px 0px 5px 0px; */
+  font-family: AcknowledgementMedium;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+}
+#ad1 a.wanted:hover {
+  -webkit-box-shadow: 4px 10px #484848;
+  -moz-box-shadow: 4px 10px #484848;
+  box-shadow: 4px 10px #484848;  
+  top: -5px;
+  left: -2px;
+}
+aside p + a { 
+display: block; 
+text-decoration: none; 
+border: 5px double; 
+color: #ffffff; 
+background-color: #484848; 
+text-align: center; 
+font-size: 26px; 
+/*
+margin: 5px 5px 9px 0px; 
+padding: 15px 0;
+*/ 
+position: relative;
+border-radius: 25px;
+-webkit-box-shadow: 2px 5px 0 0 rgba(72,72,72,1); -moz-box-shadow: 2px 5px 0 0 rgba(72,72,72,1); box-shadow: 2px 5px 0 0 rgba(72,72,72,1);
+text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+font-family: AcknowledgementMedium, sans-serif;
+}

@@ -1,0 +1,289 @@
+/* All Forms */
+form p{
+font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
+font-size: 24px;
+padding: 30px 30px 30px 30px;
+color:rgba(171, 152, 135, 1);
+}
+
+
+body.register .grid_14{
+margin-left: 0px;
+}
+
+.register #col1 h1{
+color: rgba(25, 60, 87, 1);
+
+
+-webkit-column-span: all;
+-moz-column-span: all;
+font-size: 33px;
+/*
+margin: 0px 0 4px 0; */
+padding-top: 10px;
+
+
+}
+
+
+#geoForm input{
+margin-top: 60px;
+height: 80px;
+}
+
+input{
+height:30px;
+}
+input:focus{
+background-color: #E0FFE2;
+}
+Input:required,
+Input[required] {
+background-image: url("../images/required.png");
+background-repeat:no-repeat;
+background-position:right center;
+/* background-size: 10px; */
+}
+Input:focus:invalid{
+background-image: url("../images/invalid.png");
+background-repeat:no-repeat;
+background-position:right center;
+/* background-size: 10px; */
+box-shadow: none;
+}
+Input:focus:valid{
+background-image: url("../images/valid.png");
+background-repeat:no-repeat;
+background-position:right center;
+/* background-size: 10px; */
+}
+.placeholder{
+color: #A9A9A9;
+} /* our JS script adds the placeholder class to input fields when the Modernizer.js script finds a browser doesn't support HTML5 placeholder, so we can style the fake placeholder content like the HTML version */
+#asterix{
+float: right;
+height: 30px;
+width: 200px;
+background-image: url("../images/required.png");
+background-repeat:no-repeat;
+background-position:left center;
+}
+#required{
+float: right;
+color: fuchsia;
+}
+
+
+
+
+
+
+/* Registration Form */
+#register-name,
+#email,
+#url{
+width: 300px;
+}
+#startdate{
+width: 200px;
+}
+#favcolor,
+#quantity{
+width:80px;
+}
+
+
+
+
+
+
+/* Forms */
+form {
+
+  clear: both;
+
+  -moz-box-shadow: 
+    inset 1px 1px 84px rgba(191, 171, 151, 0.4), 
+    inset -1px -1px 84px rgba(191, 171, 151, 0.4);
+
+/*
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#b1b1b1'); 
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='#b1b1b1')";
+*/
+
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  min-height: 300px;
+  background: rgba(255, 215, 181, 0.5)  url(../images/bg-form.png) no-repeat bottom center ;
+}
+
+form#geoForm
+{
+  padding: 0px;
+  border:none;
+  min-height:0px;
+  background:none;
+  filter: none;
+  -ms-filter:none;
+  -moz-box-shadow: none;
+}
+
+form ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+form ul li {
+  margin-bottom: 40px;
+}
+
+label {
+  font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
+  font-size: 26px;
+  display:block;
+  margin: auto;
+  text-align:center;
+}
+form p {
+  text-align: center;
+}
+input[type=text], input[type=email], input[type=password], input[type=url], textarea {
+  background-color: transparent;
+  border: dotted #484848;	
+  border-width: 0 0 1px 0;
+  display:block;
+  margin: 10px auto 10px;
+  font-style:italic;
+  font-family: Times, "Times New Roman", serif;
+  padding: 5px 30px 5px 30px;
+  width: 50%;
+}
+
+input#zipcode {
+	width:25%;
+	display:inline;
+	margin-right: 25px;
+}
+input[type=number] {
+  width: 3em;
+}
+
+input:not([type=range]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]) {
+  background: transparent no-repeat top right;
+}
+
+input:not([type=range]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]):required {
+  background-image: url('../images/required.png'); 
+}
+
+input:not([type=range]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]):focus:invalid { 
+  background-image: url('../images/invalid.png');
+} 
+input:not([type=range]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]):focus:valid { 
+  background-image: url('../images/valid.png');
+}
+
+:invalid {
+  box-shadow: none;
+}
+
+::-webkit-input-placeholder { color:#333; }
+
+
+input {
+  font-size: 20px;
+  text-align: center;
+}
+
+input[type=submit], input[type=button] {
+  border: none;
+  -moz-border-radius: 10%;
+  border-radius: 5px;
+  background-color: #333;
+  /* SVG for IE9 and Opera */
+  background-image: url(../images/button-gradient.svg);
+  /* Old WebKit */
+  background-image: -webkit-gradient(radial, 30% 120%, 0, 30% 120%, 100, 
+    color-stop(0,rgba(144,144,144,1)), 
+    color-stop(1,rgba(72,72,72,1)));
+  /* W3C for Mozilla */
+  background-image: -moz-radial-gradient(30% 120%, circle, 
+    rgba(144,144,144,1) 0%, 
+    rgba(72,72,72,1) 50%);
+  /* W3C for new WebKit */
+  background-image: -webkit-radial-gradient(30% 120%, circle, 
+    rgba(144,144,144,1) 0%, 
+    rgba(72,72,72,1) 50%);
+  /* W3C unprefixed */
+  background-image: radial-gradient(30% 120%, circle,
+    rgba(144,144,144, 1) 0%,
+    rgba(72,72,72,1) 50%);
+  color: #fff;
+  font-family: LeagueGothic, Tahoma, Geneva, sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  padding: 20px 30px;
+  margin: 10px auto;
+  opacity: 0.8;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+ 
+}
+
+
+
+input[type=submit]:hover {
+  opacity: 1;
+  -webkit-transition: opacity .25s linear;
+  -moz-transition: opacity .25s linear;
+}
+
+
+
+
+
+
+
+
+
+body.register hgroup.form h1{
+padding-top: 10px;
+
+}
+
+body.register hgroup.form{
+margin-top: -10px;
+background-color: #ffffff;
+  border: solid 2px #651E33;
+  border-width: 0px 0px 2px 0px;
+}
+
+hgroup.form h1 {
+
+  color:rgba(101, 30, 51, 1);
+margin: 25px 0px 10px 0px;
+  font-size: 45px;
+  font-family: AcknowledgementMedium;
+  text-align:center;
+  white-space:nowrap;
+  background: 
+    url(../images/bg-formtitle-left.png) left 20px no-repeat, 
+    url(../images/bg-formtitle-right.png) right 20px no-repeat;
+}
+hgroup.form h2{
+text-align:center;
+padding-bottom: 10px;
+font-size: 30px
+}
+hgroup.form p {
+  text-align:center;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+form hgroup {
+  padding-bottom: 50px;
+}
+
+
