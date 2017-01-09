@@ -45,3 +45,12 @@ To watch changes and automatically re-compile
 compass watch
 ```
 
+## Deploy
+
+Since there is no gulp build process there code can be deployed to a repo, then its just a matter of choosing which branch of the repo should be used for gh-pages.
+
+## Releases
+
+released version 0.0.0 - starting code edition 1
+released version 0.0.2 - starting code edition 2
+released version 1.0.0 - finished studying edition 1
